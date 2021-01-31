@@ -1,0 +1,20 @@
+
+.Profile{
+    margin-left: 200px;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bioprofesion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+.bioprofesion h1{
+color: rgb(110, 110, 204);
+font-size: 35px;
+}
+.bioprofesion p{
+    font-size: 18px;
+}
