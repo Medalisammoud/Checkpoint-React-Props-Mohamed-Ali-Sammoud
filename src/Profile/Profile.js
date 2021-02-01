@@ -3,18 +3,19 @@ import PropTypes from "prop-types";
 import './styleProfile.css'
 
 const Profile =(props)=>{
-    const handleName=e=>{
+    (props.enpress)=e=>{
         e.preventDefault();
-        alert("Im Mohamed Ali Sammoud");
+        alert(`Hello ${props.name}` );
     }
     const styleObject={width:'400px',marginTop:'30px',borderRadius:'8px'};
     return(
         <div className='Profile'>
         <img style={styleObject} src={props.children} alt="PhotoProfile" />
         <div className='bioprofesion'>
-        <h1 onClick={handleName}>{props.name}</h1>
+        <h1>{props.name}</h1>
         <p>{props.bio}</p>
         <p>{props.profesion}</p>
+        <button onClick={props.enpress}>Click Me</button>
         </div>
         </div>
     );
